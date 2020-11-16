@@ -1,8 +1,8 @@
-Original App Design Project - README Template
+Updated Original App Design Project - README Template
+
 ===
 
 # Tic Tac Toe
-
 ## Table of Contents
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
@@ -14,7 +14,6 @@ Original App Design Project - README Template
 Tic Tac Toe done by the use of recycler views.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:**
 - **Mobile:** Touchscreen game made for android
 - **Story:** This app can be used to teach children basic planning skills
@@ -28,9 +27,12 @@ Tic Tac Toe done by the use of recycler views.
 
 **Required Must-have Stories**
 * Users enter through a start screen
+* Users can view a list of game rules
 * Users have a game screen
 * Users can exit the game
-* Users can view winner & loser score
+* Users can view winner score
+* Users can view results screen
+* Users can reset the grid to start a new game
 
 **Optional Nice-to-have Stories**
 
@@ -45,7 +47,7 @@ Tic Tac Toe done by the use of recycler views.
     * Game starts
     * X's and O's inserted
     * Tic Tac Toe game in progress
-    * Users scores
+    * User's scores
 
 ### 3. Navigation
 
@@ -71,9 +73,14 @@ https://gyazo.com/b8ccd9c8cd2446ad13825c1091bd98f0
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+| Property | Type     | Description                                        |
+| -------- | -------- | -----------------------------------------------|
+| ObjectId | Widget   | Calling widget by Id                               |
+| Grid     | Button   | 3x3 array representing postions in Tic-Tac-Toe     |
+| Toast    | String   | Inform user of win/loss                            |
+| Score    | Number   | Number of Wins                                     |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
