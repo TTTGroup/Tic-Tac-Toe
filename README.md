@@ -26,18 +26,18 @@ Tic Tac Toe done by the use of recycler views.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* Users enter through a start screen
-* Users can view a list of game rules
-* Users have a game screen
-* Users can exit the game
-* Users can view winner score
-* Users can view results screen
-* Users can reset the grid to start a new game
+- [ ] Users enter through a start screen
+- [ ] Users can view a list of game rules
+- [X] Users have a 3x3 grid as a game screen
+- [ ] Users can exit the game
+- [ ] Users can view winner score
+- [ ] Users can view results screen
+- [ ] Users can reset the grid to start a new game
 
 **Optional Nice-to-have Stories**
 
-* Users can have access to an options UI
-* Portrait and Landscape mode 
+- [ ] Users can have access to an options UI
+- [ ] Portrait and Landscape mode 
 
 ### 2. Screen Archetypes
 
