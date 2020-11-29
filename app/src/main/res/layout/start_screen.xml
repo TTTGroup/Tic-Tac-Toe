@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvStart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRules"
+        android:layout_marginTop="0dp"
+        android:text="Press here to Start!"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic-Tac-Toe"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvRules"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="0dp"
+        android:text="1. The game is played on a grid that's 3 squares by 3 squares.\n2. You are X, your friend is O. Players take turns putting their marks in empty squares.\n3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.\n4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie."
+        android:textSize="25sp" />
+
+</RelativeLayout>
