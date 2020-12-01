@@ -26,18 +26,22 @@ Tic Tac Toe done by the use of recycler views.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-- [ ] Users enter through a start screen
-- [ ] Users can view a list of game rules
-- [X] Users have a 3x3 grid as a game screen
+- [X] Users create a 3x3 grid as a game screen
+- [X] Users can click on boxes
+- [X] User 1 automatically assigned to X's
+- [X] User 2 automatically assigned to O's
+- [X] Auto alternate between User 1's and User 2's turns
+- [ ] User 1 can win the game
+- [ ] User 2 can win the game
+- [ ] Users can draw the game
+- [ ] Users can click "reset" button to start a new game
+- [ ] Users Scoreboard updates at the end of each game
 - [ ] Users can exit the game
-- [ ] Users can view winner score
-- [ ] Users can view results screen
-- [ ] Users can reset the grid to start a new game
 
 **Optional Nice-to-have Stories**
-
-- [ ] Users can have access to an options UI
-- [ ] Portrait and Landscape mode 
+- [ ] Users begin through a start menu
+- [ ] Users have access to an options menu
+- [X] Portrait and Landscape mode 
 
 ### 2. Screen Archetypes
 
@@ -75,7 +79,7 @@ https://gyazo.com/b8ccd9c8cd2446ad13825c1091bd98f0
 ## Schema 
 ### Models
 | Property | Type     | Description                                        |
-| -------- | -------- | -----------------------------------------------|
+| -------- | -------- | -----------------------------------------------    |
 | ObjectId | Widget   | Calling widget by Id                               |
 | Grid     | Button   | 3x3 array representing postions in Tic-Tac-Toe     |
 | Toast    | String   | Inform user of win/loss                            |
