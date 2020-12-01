@@ -42,6 +42,7 @@ Tic Tac Toe done by the use of recycler views.
 - [ ] Users begin through a start menu
 - [ ] Users have access to an options menu
 - [X] Portrait and Landscape mode 
+- [ ] Persistence between Portrait and Landscape mode
 
 ### 2. Screen Archetypes
 
@@ -68,6 +69,9 @@ Tic Tac Toe done by the use of recycler views.
    * Reset widget
    * Winner's count
    * Loser's count
+
+## Build Progress (Gif's)
+https://recordit.co/FqzeUQy2Em
 
 ## Wireframes
 https://gyazo.com/b8ccd9c8cd2446ad13825c1091bd98f0
