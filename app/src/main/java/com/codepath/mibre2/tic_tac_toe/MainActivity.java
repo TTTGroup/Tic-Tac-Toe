@@ -3,11 +3,13 @@ package com.codepath.mibre2.tic_tac_toe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = "MainActivity";
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
     private int roundCount;
@@ -38,6 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0;j < 3; j++) {
+                        buttons[i][j].setText("");
+                        Log.d(TAG, "Attempted to reset grid");
+                    }
+                }
+                return;
             }
         });
     }
