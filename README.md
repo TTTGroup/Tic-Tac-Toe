@@ -71,7 +71,7 @@ Tic Tac Toe done by the use of recycler views.
    * Loser's count
 
 ## Build Progress (Gif's)
-![Alt text](Milestone4.gif) / ![](Milestone4.gif)
+![](Milestone4.gif)
 
 GIF created with [Peek](https://github.com/phw/peek)
 
