@@ -39,7 +39,7 @@ Tic Tac Toe done by the use of recycler views.
 - [X] Users can exit the game
 
 **Optional Nice-to-have Stories**
-- [ ] Users begin through a start menu
+- [X] Users begin through a start menu
 - [ ] Users have access to an options menu
 - [X] Portrait and Landscape mode 
 - [ ] Persistence between Portrait and Landscape mode
