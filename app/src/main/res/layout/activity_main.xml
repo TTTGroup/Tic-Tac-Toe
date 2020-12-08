@@ -31,10 +31,25 @@
             android:id="@+id/button_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/text_view_p1"
             android:text="reset" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button_reset"
+            android:layout_alignBottom="@+id/button_reset"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@id/button_reset"
+            android:text="Exit" />
 
     </RelativeLayout>
 

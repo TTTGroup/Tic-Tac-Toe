@@ -1,7 +1,9 @@
 package com.codepath.mibre2.tic_tac_toe;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -47,6 +49,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
                 return;
+            }
+        });
+
+        Button buttonExit = findViewById(R.id.button_exit);
+        buttonExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Exit");
+                builder.setMessage("Do you want to exit ??");
+                builder.setPositiveButton("Yes. Exit now!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    finish();
+
+                }
+            });
+	        builder.setNegativeButton("Not now", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                    dialogInterface.dismiss();
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
             }
         });
     }
