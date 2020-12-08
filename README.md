@@ -34,9 +34,9 @@ Tic Tac Toe done by the use of recycler views.
 - [ ] User 1 can win the game
 - [ ] User 2 can win the game
 - [ ] Users can draw the game
-- [ ] Users can click "reset" button to start a new game
+- [X] Users can click "reset" button to start a new game
 - [ ] Users Scoreboard updates at the end of each game
-- [ ] Users can exit the game
+- [X] Users can exit the game
 
 **Optional Nice-to-have Stories**
 - [ ] Users begin through a start menu
