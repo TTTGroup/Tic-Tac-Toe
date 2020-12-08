@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = "MainActivity";
@@ -143,13 +144,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // TODO: NEEDS COMPLETION
     private void player1Wins() {
+        Log.i(TAG, "Player 1 wins");
+        String currentpoints = textViewPlayer1.getText().toString();
+        String[] separated = currentpoints.split(": ");
+        player1Points = Integer.parseInt(separated[1]);
+        player1Points++;
+        textViewPlayer1.setText("Player 1: " + player1Points);
+        Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "End Player 1 function");
     }
 
     // TODO: NEEDS COMPLETION
     private void player2Wins() {
+        Log.i(TAG, "Player 2 wins");
+        String currentpoints = textViewPlayer2.getText().toString();
+        String[] separated = currentpoints.split(": ");
+        player2Points = Integer.parseInt(separated[1]);
+        player2Points++;
+        textViewPlayer2.setText("Player 2: " + player2Points);
+        Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "End player 2 function");
     }
 
     // TODO: NEEDS COMPLETION
     private void draw() {
+        Log.i(TAG, "No one wins");
+        Toast.makeText(this, "Nobody wins!", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "End Draw Function");
     }
 }
