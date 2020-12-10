@@ -26,20 +26,23 @@ Tic Tac Toe done by the use of recycler views.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
+- [X] Users can view a start screen with a picture and a game explanation
 - [X] Users create a 3x3 grid as a game screen
 - [X] Users can click on boxes
 - [X] User 1 automatically assigned to X's
 - [X] User 2 automatically assigned to O's
 - [X] Auto alternate between User 1's and User 2's turns
-- [ ] User 1 can win the game
-- [ ] User 2 can win the game
-- [ ] Users can draw the game
+- [X] User 1 can win the game
+- [X] User 2 can win the game
+- [X] Users can reach a draw
 - [X] Users can click "reset" button to start a new game
-- [ ] Users Scoreboard updates at the end of each game
+- [X] Users Scoreboard updates at the end of each game
 - [X] Users can exit the game
+- [X] Grid automatically resets when a game ends
 
 **Optional Nice-to-have Stories**
 - [X] Users begin through a start menu
+- [X] Confirmation screen from Exit button
 - [ ] Users have access to an options menu
 - [X] Portrait and Landscape mode 
 - [ ] Persistence between Portrait and Landscape mode
@@ -53,6 +56,9 @@ Tic Tac Toe done by the use of recycler views.
     * X's and O's inserted
     * Tic Tac Toe game in progress
     * User's scores
+* Start Screen
+   * A Welcome screen
+
 
 ### 3. Navigation
 
@@ -71,10 +77,7 @@ Tic Tac Toe done by the use of recycler views.
    * Loser's count
 
 ## Build Progress (Gif's)
-![](Milestone4.gif)
-
-GIF created with [Peek](https://github.com/phw/peek)
-
+https://recordit.co/FqzeUQy2Em
 
 ## Wireframes
 https://gyazo.com/b8ccd9c8cd2446ad13825c1091bd98f0
