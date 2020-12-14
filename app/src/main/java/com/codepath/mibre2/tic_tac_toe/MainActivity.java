@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
     private int roundCount;
-    
+
     private int player1Points;
     private int player2Points;
 
@@ -65,20 +65,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                    finish();
+                        finish();
 
-                }
-            });
-	        builder.setNegativeButton("Not now", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
+                    }
+                });
+                builder.setNegativeButton("Not now", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
-                    dialogInterface.dismiss();
-                }
-            });
+                        dialogInterface.dismiss();
+                    }
+                });
 
-            AlertDialog dialog = builder.create();
-            dialog.show();
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         });
     }
@@ -142,34 +142,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return false;
     }
 
-    // TODO: NEEDS COMPLETION
+    // If player 1 wins
+    // Call updatePointsText function
+    // Call restBoard function
     private void player1Wins() {
-        Log.i(TAG, "Player 1 wins");
-        String currentpoints = textViewPlayer1.getText().toString();
-        String[] separated = currentpoints.split(": ");
-        player1Points = Integer.parseInt(separated[1]);
         player1Points++;
-        textViewPlayer1.setText("Player 1: " + player1Points);
         Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
-        Log.i(TAG, "End Player 1 function");
+        updatePointsText();
+        resetBoard();
     }
 
-    // TODO: NEEDS COMPLETION
+    // If player 1 wins
+    // Call updatePointsText function
+    // Call restBoard function
     private void player2Wins() {
-        Log.i(TAG, "Player 2 wins");
-        String currentpoints = textViewPlayer2.getText().toString();
-        String[] separated = currentpoints.split(": ");
-        player2Points = Integer.parseInt(separated[1]);
         player2Points++;
-        textViewPlayer2.setText("Player 2: " + player2Points);
         Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
-        Log.i(TAG, "End player 2 function");
+        updatePointsText();
+        resetBoard();
     }
 
-    // TODO: NEEDS COMPLETION
+    // If player 1 wins
+    // Call restBoard function
     private void draw() {
-        Log.i(TAG, "No one wins");
-        Toast.makeText(this, "Nobody wins!", Toast.LENGTH_SHORT).show();
-        Log.i(TAG, "End Draw Function");
+        Toast.makeText(this, "Draw!", Toast.LENGTH_SHORT).show();
+        resetBoard();
+    }
+
+    // Updates player points
+    private void updatePointsText() {
+        textViewPlayer1.setText("Player 1: " + player1Points);
+        textViewPlayer2.setText("Player 2: " + player2Points);
+    }
+
+    // Use nested loop to reset grid by deleting text in tv
+    private void resetBoard() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                buttons[i][j].setText("");
+            }
+        }
+
+        roundCount = 0;
+        player1Turn = true;
     }
 }
