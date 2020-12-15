@@ -41,11 +41,10 @@ Tic Tac Toe done by the use of recycler views.
 - [X] Grid automatically resets when a game ends
 
 **Optional Nice-to-have Stories**
-- [X] Users begin through a start menu
 - [X] Confirmation screen from Exit button
-- [ ] Users have access to an options menu
 - [X] Portrait and Landscape mode 
 - [ ] Persistence between Portrait and Landscape mode
+- [ ] Users have access to an options menu
 
 ### 2. Screen Archetypes
 
@@ -56,9 +55,6 @@ Tic Tac Toe done by the use of recycler views.
     * X's and O's inserted
     * Tic Tac Toe game in progress
     * User's scores
-* Start Screen
-   * A Welcome screen
-
 
 ### 3. Navigation
 
@@ -78,6 +74,7 @@ Tic Tac Toe done by the use of recycler views.
 
 ## Build Progress (Gif's)
 https://recordit.co/FqzeUQy2Em
+https://recordit.co/HWWES4DDOV
 
 ## Wireframes
 https://gyazo.com/b8ccd9c8cd2446ad13825c1091bd98f0
